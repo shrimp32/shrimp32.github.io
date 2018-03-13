@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>HTML Preview (markdown to html) - Editor.md examples</title>
-    <link rel="stylesheet" href="editormd/css/editormd.preview.css" />
+    <link rel="stylesheet" href="./editormd/css/editormd.preview.css" />
     <style>
         body {padding: 40px;}
 
@@ -56,22 +56,22 @@
         <div class="markdown-body editormd-preview-container" id="custom-toc-container">#custom-toc-container</div>
     </div>
 </div>
-<script src="editormd/examples/js/jquery.min.js"></script>
-<script src="editormd/lib/marked.min.js"></script>
+<script src="./editormd/examples/js/jquery.min.js"></script>
+<script src="./editormd/lib/marked.min.js"></script>
 
-<script src="editormd/lib/prettify.min.js"></script>
-<script src="editormd/lib/raphael.min.js"></script>
-<script src="editormd/lib/underscore.min.js"></script>
-<script src="editormd/lib/sequence-diagram.min.js"></script>
-<script src="editormd/lib/flowchart.min.js"></script>
-<script src="editormd/lib/jquery.flowchart.min.js"></script>
+<script src="./editormd/lib/prettify.min.js"></script>
+<script src="./editormd/lib/raphael.min.js"></script>
+<script src="./editormd/lib/underscore.min.js"></script>
+<script src="./editormd/lib/sequence-diagram.min.js"></script>
+<script src="./editormd/lib/flowchart.min.js"></script>
+<script src="./editormd/lib/jquery.flowchart.min.js"></script>
 
-<script src="editormd/editormd.js"></script>
+<script src="./editormd/editormd.js"></script>
 <script type="text/javascript">
     $(function() {
         var testEditormdView;
 
-        $.get("tdf.md", function(markdown) {
+        $.get("./tdf.md", function(markdown) {
 
             testEditormdView = editormd.markdownToHTML("test-editormd-view", {
                 markdown        : markdown ,//+ "\r\n" + $("#append-test").text(),
